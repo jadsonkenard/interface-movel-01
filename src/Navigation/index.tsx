@@ -1,3 +1,4 @@
+//=========MANDA PARA A TELA DE LOGIN==============
 import { NavigationContainer} from "@react-navigation/native";
 import { SignIn } from "../screens";
 export default function Navigation(){

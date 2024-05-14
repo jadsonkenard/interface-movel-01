@@ -8,15 +8,17 @@ export const ButtonG = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    margin-top: 10px;
 `
 
 export const ButtonP = styled.TouchableOpacity`
     background-color: ${theme.colors.primary};
-    width: 80px;
+    width: 150px;
     height: 30px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    margin-top: 10px;
 `
 
 export const ButtonGOutline = styled.TouchableOpacity`
@@ -26,16 +28,18 @@ export const ButtonGOutline = styled.TouchableOpacity`
     justify-content: center;
     border-radius: 8px;
     border: 1px;
+    margin-top: 10px;
     border-color: ${theme.colors.primary};
 `
 
 export const ButtonPOutline = styled.TouchableOpacity`
-    width: 80px;
+    width: 150px;
     height: 30px;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     border: 1px;
+    margin-top: 10px;
     border-color: ${theme.colors.primary};
 
 `
