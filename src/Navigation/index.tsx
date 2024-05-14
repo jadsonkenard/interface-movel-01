@@ -1,10 +1,24 @@
 import { NavigationContainer} from "@react-navigation/native";
-import ShowBottomTabs from "./BottomTabs";
-
+import { SignIn } from "../screens";
 export default function Navigation(){
     return (
         <NavigationContainer>
-            <ShowBottomTabs/>
+            <SignIn/>
         </NavigationContainer>
     )
 }
+
+
+
+
+//=========MANDA PARA O BOTTOM TABS==============
+// import { NavigationContainer} from "@react-navigation/native";
+// import ShowBottomTabs from "./BottomTabs";
+
+// export default function Navigation(){
+//     return (
+//         <NavigationContainer>
+//             <ShowBottomTabs/>
+//         </NavigationContainer>
+//     )
+// }

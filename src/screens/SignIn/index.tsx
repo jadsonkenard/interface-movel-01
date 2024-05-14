@@ -1,15 +1,10 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text } from "react-native"
+import { Container } from "./style"
 
 export default function SignIn(){
     return(
-        <View>
+        <Container>
             <Text>Login</Text>
-            <TouchableOpacity>
-                <Text>Entrar</Text>
-            </TouchableOpacity>
-            <TouchableOpacity>
-                <Text>Entrar</Text>
-            </TouchableOpacity>
-        </View>
+        </Container>
     )
 }
