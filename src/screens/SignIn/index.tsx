@@ -7,6 +7,9 @@ export default function SignIn(){
             <TouchableOpacity>
                 <Text>Entrar</Text>
             </TouchableOpacity>
+            <TouchableOpacity>
+                <Text>Entrar</Text>
+            </TouchableOpacity>
         </View>
     )
 }
