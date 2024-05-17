@@ -1,11 +1,11 @@
-import { Text } from "react-native";
 import { Container } from "./style";
+import { ButtonTextOutline } from "../../components";
 
 
 export default function Profile() {
     return(
         <Container>
-            <Text>Perfil</Text>
+            <ButtonTextOutline>Perfil</ButtonTextOutline>
         </Container>
     )
 }

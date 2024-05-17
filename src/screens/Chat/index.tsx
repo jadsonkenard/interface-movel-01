@@ -1,11 +1,11 @@
-import { Text } from "react-native";
+import { ButtonTextOutline } from "../../components";
 import { Container } from "./style";
 
 
 export default function Chat() {
     return(
         <Container>
-            <Text>Chat</Text>
+            <ButtonTextOutline>Chat</ButtonTextOutline>
         </Container>
     )
 }

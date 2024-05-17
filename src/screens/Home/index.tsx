@@ -1,11 +1,11 @@
-import { Text } from "react-native";
 import { Container } from "./style";
+import { ButtonTextOutline } from "../../components";
 
 
 export default function Home() {
     return(
         <Container>
-            <Text>Home</Text>
+            <ButtonTextOutline>Home</ButtonTextOutline>
         </Container>
     )
 }

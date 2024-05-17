@@ -50,5 +50,4 @@ export const ButtonText = styled.Text`
 export const ButtonTextOutline = styled.Text`
     color: ${theme.colors.primary};
     font-weight: bold;
-    padding: 8px;
 `

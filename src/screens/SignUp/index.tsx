@@ -1,8 +1,10 @@
 import { Container } from "./style";
-import { ButtonG, ButtonText,  ButtonTextOutline, InputContainer } from "../../components";
+import { ButtonG, ButtonGOutline, ButtonText,  ButtonTextOutline, InputContainer } from "../../components";
+import { useNavigation } from "@react-navigation/native";
+import { StackTypes } from "../../routes";
 
 export default function SignUp() {
-
+const navigation = useNavigation<StackTypes>();
 
     return (
         <Container>
@@ -14,6 +16,9 @@ export default function SignUp() {
             <ButtonG>
                 <ButtonText>Enviar</ButtonText>
             </ButtonG>
+            <ButtonGOutline onPress={() => navigation.navigate("Login")}>
+                <ButtonTextOutline>Voltar</ButtonTextOutline>
+            </ButtonGOutline>
         </Container>
     )
 }
