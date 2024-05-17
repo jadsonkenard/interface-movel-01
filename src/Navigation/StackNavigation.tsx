@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Chat, Home, Profile, Settings } from "../screens";
+import { Chat, Home, Profile, Settings, SignIn, SignUp } from "../screens";
+import ShowBottomTabs from "./BottomTabs";
 
 const Stack = createNativeStackNavigator();
-
 
 export function HomeNavigation(){
     return(

@@ -3,6 +3,7 @@ import Home from "./Home";
 import Profile from "./Profile";
 import Settings from "./Settings";
 import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
 
 export {
@@ -10,6 +11,7 @@ export {
     Chat,
     Profile,
     Settings,
-    SignIn
+    SignIn,
+    SignUp
     
 }
