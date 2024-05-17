@@ -1,18 +1,19 @@
-import React from "react";
-import { Text } from "react-native";
 import { Container } from "./style";
-import { ButtonG, ButtonP, ButtonText, ButtonPOutline, ButtonGOutline, ButtonTextOutline } from "../../components";
+import { ButtonG, ButtonText,  ButtonTextOutline, InputContainer } from "../../components";
 
 export default function SignUp() {
 
 
     return (
         <Container>
-            <Text>Inscreva-se</Text>
+            <ButtonTextOutline>Tela de inscrição</ButtonTextOutline>
+            <InputContainer placeholder="Nome"/>
+            <InputContainer placeholder="Email"/>
+            <InputContainer placeholder="Senha"/>
+            <InputContainer placeholder="Conformar senha"/>
             <ButtonG>
                 <ButtonText>Enviar</ButtonText>
             </ButtonG>
-            <ButtonTextOutline>Tela de inscrição</ButtonTextOutline>
         </Container>
     )
 }

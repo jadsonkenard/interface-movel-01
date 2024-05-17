@@ -10,5 +10,5 @@ export {
     ButtonPOutline,
     ButtonText,
     ButtonTextOutline,
-    InputContainer
+    InputContainer,
 }
