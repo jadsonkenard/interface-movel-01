@@ -11,8 +11,8 @@ export default function Settings() {
     return(
         <Container>
             <ButtonTextOutline>Configurações</ButtonTextOutline>
-            <ButtonGOutline>
-                <ButtonTextOutline onPress={() => navigation.navigate("Login")}>Sair</ButtonTextOutline>
+            <ButtonGOutline  onPress={() => navigation.navigate("Login")}>
+                <ButtonTextOutline>Sair</ButtonTextOutline>
             </ButtonGOutline>
         </Container>
     )

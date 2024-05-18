@@ -8,7 +8,7 @@ const Stack = createNativeStackNavigator();
 type StackNavigationType = {
     Navegar: undefined;
     SignUp: undefined;
-    Login: undefined
+    Login: undefined;
 }
 
 export type StackTypes = NativeStackNavigationProp<StackNavigationType>
