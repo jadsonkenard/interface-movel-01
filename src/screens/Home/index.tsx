@@ -7,10 +7,11 @@ import Toast from 'react-native-toast-message';
 export default function Home() {
     const showToast = () => {
         Toast.show({
-            type: 'info',
-            text1: 'Hello',
-            text2: 'This is some something',
+            type: 'success',
+            text1: 'Notificação',
+            text2: 'Seus alertas ou notificação',
             visibilityTime: 2000,
+            topOffset: 30,
         });
     }
     return(
@@ -18,7 +19,10 @@ export default function Home() {
             <Toast/>
             <ButtonTextOutline>Home</ButtonTextOutline>
             <ButtonG onPress={showToast}>
-                <ButtonText>Mostrar toast</ButtonText>
+                <ButtonText>Menssagem de Toast</ButtonText>
+            </ButtonG>
+            <ButtonG>
+                <ButtonText>Estilo de modal</ButtonText>
             </ButtonG>
         </Container>
     )
