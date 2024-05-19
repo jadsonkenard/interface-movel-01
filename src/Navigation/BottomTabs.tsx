@@ -10,7 +10,7 @@ export default function ShowBottomTabs() {
         <Tab.Navigator
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
-                    let iconName;
+                    let iconName: any
 
                     if (route.name === 'HomeTab') {
                         iconName = focused ? 'home' : 'home-outline';

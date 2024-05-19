@@ -1,28 +1,42 @@
-import React, { useState } from "react";
-import { Modal, Text } from "react-native";
-import { Container } from "./styles";
-import { ButtonG } from "../themes/Button";
+import React from "react";
+import { Modal as ModalReact, ModalProps as ModalPropsReact  } from "react-native";
+import { Container, TextModal, TitleModal, IconModal, LocalButtonModal } from "./styles";
+import { ButtonG, ButtonText } from "../themes/Button";
+import Icon from "react-native-vector-icons/Ionicons";
 
 
-export default function showModal() {
-    const [visibleModal, setVisibleModal] = useState(false);
-    const show = () => setVisibleModal(true);
-    const hide = () => setVisibleModal(false)
+interface ModalProps extends ModalPropsReact {
+    title: string;
+    text: string;
+    closeModal: () => void;
+}
 
 
+export default function Modal({ title, text, closeModal, ...props }: ModalProps)  {
     return (
-        <>
-            <ButtonG onPress={show}><Text>Abrir modal</Text></ButtonG>
-            <Modal
-                visible={visibleModal}
+            <ModalReact
+                transparent={true}
+                animationType="slide"
+                onRequestClose={() => {
+                    closeModal();
+                }}
+                {...props}
             >
                 <Container>
-                    <Text>Modal</Text>
-                    <ButtonG onPress={hide}><Text>Fechar modal</Text></ButtonG>
-                </Container>
-            </Modal>
+                    <TitleModal>{title}</TitleModal>
+                    <IconModal onPress={closeModal}>
+                        <Icon name="close" size={25} />
+                    </IconModal>
+                    <TextModal>{text}</TextModal>
+                    <LocalButtonModal>
+                        <ButtonG onPress={closeModal}><ButtonText>Fechar</ButtonText></ButtonG>
+                    </LocalButtonModal>
 
-        </>
+                </Container>
+
+
+            </ModalReact>
+
 
     )
 }
