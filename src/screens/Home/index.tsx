@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, IconPopUP } from "./style";
-import { ButtonG, ButtonText, ButtonTextOutline, Modal, PopUpMenu } from "../../components";
+import { ButtonG, ButtonText, ButtonTextOutline, Modal, PopUpMenu, theme } from "../../components";
 import Toast from 'react-native-toast-message';
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -26,17 +26,14 @@ export default function Home() {
                 title="Menu"
                 text="Opções"
             />
-
-
-
-
-            <Toast />
             <Modal
                 closeModal={() => setVisible(false)}
                 visible={visible}
                 title="Titilo do modal"
                 text="Texto do modal"
             />
+
+            <Toast />
             <ButtonTextOutline>Home</ButtonTextOutline>
             <ButtonG onPress={showToast}>
                 <ButtonText>Toast</ButtonText>
@@ -44,8 +41,9 @@ export default function Home() {
             <ButtonG onPress={() => setVisible(true)}>
                 <ButtonText>Modal</ButtonText>
             </ButtonG>
+
             <IconPopUP onPress={() => setPopUpVisible(true)}>
-            <Icon name="add-circle-outline" size={25}/>
+            <Icon name="add-circle-outline" size={25} color={theme.colors.primary} />
             </IconPopUP>
 
         </Container>

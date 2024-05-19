@@ -3,6 +3,7 @@ import { Modal as ModalReact, ModalProps as ModalPropsReact  } from "react-nativ
 import { Container, TextModal, TitleModal, IconModal, LocalButtonModal } from "./styles";
 import { ButtonG, ButtonText } from "../themes/Button";
 import Icon from "react-native-vector-icons/Ionicons";
+import theme from "../themes/theme";
 
 
 interface ModalProps extends ModalPropsReact {
@@ -25,7 +26,7 @@ export default function Modal({ title, text, closeModal, ...props }: ModalProps)
                 <Container>
                     <TitleModal>{title}</TitleModal>
                     <IconModal onPress={closeModal}>
-                        <Icon name="close" size={25} />
+                        <Icon name="close" size={25} color={theme.colors.primary} />
                     </IconModal>
                     <TextModal>{text}</TextModal>
                     <LocalButtonModal>

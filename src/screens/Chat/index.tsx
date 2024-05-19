@@ -1,11 +1,10 @@
 import { ButtonTextOutline } from "../../components";
 import { Container } from "./style";
 
-export default function Chat() {
+export default function Cart() {
     return(
         <Container>
-            
-            <ButtonTextOutline>Chat</ButtonTextOutline>
+            <ButtonTextOutline>Carrinho</ButtonTextOutline>
         </Container>
     )
 }
