@@ -3,6 +3,7 @@ import { ButtonG, ButtonP, ButtonGOutline, ButtonPOutline, ButtonText, ButtonTex
 import { InputContainer } from "./themes/Input";
 import Modal from "./Modal";
 import PopUpMenu from "./PopUpMenu";
+import { TextTheme } from "./themes/textTheme";
 
 export {
     theme,
@@ -13,6 +14,7 @@ export {
     ButtonText,
     ButtonTextOutline,
     InputContainer,
+    TextTheme,
     Modal,
     PopUpMenu
 

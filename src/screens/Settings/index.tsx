@@ -1,4 +1,4 @@
-import { ButtonGOutline, ButtonTextOutline } from "../../components";
+import { ButtonGOutline, ButtonTextOutline, TextTheme } from "../../components";
 import { StackTypes } from "../../routes";
 import { Container } from "./style";
 import { useNavigation } from "@react-navigation/native";
@@ -10,7 +10,7 @@ export default function Settings() {
 
     return(
         <Container>
-            <ButtonTextOutline>Configurações</ButtonTextOutline>
+            <TextTheme>Configurações</TextTheme>
             <ButtonGOutline  onPress={() => navigation.navigate("Login")}>
                 <ButtonTextOutline>Sair</ButtonTextOutline>
             </ButtonGOutline>

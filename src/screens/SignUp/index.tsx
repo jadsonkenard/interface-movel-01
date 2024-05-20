@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import { ButtonG, ButtonGOutline, ButtonText,  ButtonTextOutline, InputContainer } from "../../components";
+import { ButtonG, ButtonGOutline, ButtonText,  ButtonTextOutline, InputContainer, TextTheme } from "../../components";
 import { useNavigation } from "@react-navigation/native";
 import { StackTypes } from "../../routes";
 
@@ -8,7 +8,7 @@ const navigation = useNavigation<StackTypes>();
 
     return (
         <Container>
-            <ButtonTextOutline>Tela de inscrição</ButtonTextOutline>
+            <TextTheme>Tela de inscrição</TextTheme>
             <InputContainer placeholder="Nome"/>
             <InputContainer placeholder="Email"/>
             <InputContainer placeholder="Senha"/>

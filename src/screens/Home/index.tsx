@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, IconPopUP } from "./style";
-import { ButtonG, ButtonText, ButtonTextOutline, Modal, PopUpMenu, theme } from "../../components";
+import { ButtonG, ButtonText, Modal, PopUpMenu, theme, TextTheme } from "../../components";
 import Toast from 'react-native-toast-message';
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -34,7 +34,7 @@ export default function Home() {
             />
 
             <Toast />
-            <ButtonTextOutline>Home</ButtonTextOutline>
+            <TextTheme>Home</TextTheme>
             <ButtonG onPress={showToast}>
                 <ButtonText>Toast</ButtonText>
             </ButtonG>

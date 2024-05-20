@@ -1,11 +1,11 @@
 import { Container } from "./style";
-import { ButtonTextOutline } from "../../components";
+import { TextTheme } from "../../components";
 
 
 export default function Profile() {
     return(
         <Container>
-            <ButtonTextOutline>Perfil</ButtonTextOutline>
+            <TextTheme>Perfil</TextTheme>
         </Container>
     )
 }
