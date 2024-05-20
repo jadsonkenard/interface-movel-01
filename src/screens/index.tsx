@@ -1,4 +1,4 @@
-import Cart from "./Chat";
+import Cart from "./Cart";
 import Home from "./Home";
 import Profile from "./Profile";
 import Settings from "./Settings";
