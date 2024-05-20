@@ -1,20 +1,20 @@
-import { TextTheme } from "../../components";
+import { Separator, TextTheme } from "../../components";
 import { Container } from "./style";
 import { FlatList, View } from "react-native";
 import { data } from "./dataItems";
 
 export default function Cart() {
-    
+
     return(
         <Container>
             <TextTheme>Carrinho</TextTheme>
             <FlatList
+                ItemSeparatorComponent={Separator}
                 data={data}
-                renderItem={({ item }) =>
+                renderItem={({ item }) => 
                     <View  style={{ width: 370, alignItems: 'center' }}> 
                         {item.imgProduct}
                         {item.product}
-                        
                     </View>
                 }
             />
@@ -23,6 +23,8 @@ export default function Cart() {
         </Container>
     )
 }
+
+
 
 
 

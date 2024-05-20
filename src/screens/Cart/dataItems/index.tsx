@@ -1,5 +1,11 @@
 import ListItems from "../ListItems";
 import ImageItem from "./imageItem";
+
+function geraId(): number{
+    return Math.floor(Math.random() * 100 + 999)
+}
+
+
 export const data = [
     {
         id: 1,

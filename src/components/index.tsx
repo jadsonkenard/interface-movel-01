@@ -4,6 +4,7 @@ import { InputContainer } from "./themes/Input";
 import Modal from "./Modal";
 import PopUpMenu from "./PopUpMenu";
 import { TextTheme } from "./themes/textTheme";
+import Separator from "./Separator";
 
 export {
     theme,
@@ -15,6 +16,7 @@ export {
     ButtonTextOutline,
     InputContainer,
     TextTheme,
+    Separator,
     Modal,
     PopUpMenu
 
