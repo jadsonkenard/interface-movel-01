@@ -3,8 +3,10 @@ import { ButtonG, ButtonP, ButtonGOutline, ButtonPOutline, ButtonText, ButtonTex
 import { InputContainer } from "./themes/Input";
 import Modal from "./Modal";
 import PopUpMenu from "./PopUpMenu";
-import { TextTheme } from "./themes/textTheme";
+import { TextTheme, TitleTheme, Text, TextHeader } from "./themes/textTheme";
 import Separator from "./Separator";
+import Header from "./Header";
+import  { IconPopUP }  from "./PopUpMenu/style";
 
 export {
     theme,
@@ -16,8 +18,13 @@ export {
     ButtonTextOutline,
     InputContainer,
     TextTheme,
+    TitleTheme,
+    Text,
+    TextHeader,
+    IconPopUP,
+    Header,
     Separator,
     Modal,
-    PopUpMenu
-
+    PopUpMenu,
+    
 }

@@ -1,8 +1,19 @@
 import styled from "styled-components/native";
-import { theme } from "../../components";
 
 export const Container = styled.View`
     flex: 1;
-    align-items: center;
-    justify-content: center;
+`
+
+export const ContainersProfile = styled.TouchableOpacity`
+    flex-direction: row;
+    left: 10px;
+    top: 10px;
+    margin-top: 20px;
+    padding-right: 10px;
+`
+
+export const TextMenuProfile = styled.Text`
+    font-size: 18px;
+    left: 10px;
+    margin-right: 20px;
 `

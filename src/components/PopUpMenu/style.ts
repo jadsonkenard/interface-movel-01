@@ -18,4 +18,4 @@ export const LocalButtonPopUp = styled.View`
     bottom: 10px;
     flex: 1;
     left: 25px;
-` 
+`

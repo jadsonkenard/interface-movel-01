@@ -1,5 +1,5 @@
 import { Container, LocalButtonPopUp } from "./style";
-import { Modal, ModalProps as ModalPropsReact, Text  } from "react-native";
+import { Modal, ModalProps as ModalPropsReact } from "react-native";
 import { TextModal, TitleModal } from "../Modal/styles";
 import { ButtonP, ButtonText } from "../themes/Button";
 
