@@ -1,14 +1,14 @@
-import { Container } from "./style";
+import { Container, ImagemCard } from "./style";
 
 interface TypesCards {
-    color: string;
-    imageCard: string;
+    url: string;
 }
 
-export default function Cards({ color, imageCard }: TypesCards) {
+export default function Cards({ url }: TypesCards) {
     return (
-        <Container
-            style={{ backgroundColor: color }}
-            />
+        <Container>
+            <ImagemCard source={{ uri: url }}/>
+        </Container>
+            
     )
 }

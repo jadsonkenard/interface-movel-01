@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Container } from "./style";
-import { ButtonG, ButtonText, Modal, TextTheme } from "../../components";
+import { Container, TextSubTitle, TextTitleHome } from "./style";
+import { ButtonG, ButtonText, Modal, Text, TextTheme } from "../../components";
 import Toast from 'react-native-toast-message';
 import { FlatList, View } from "react-native";
 import { dataCards } from "../Cart/ListCard";
+import { dataInitialCars } from "../Cart/initialCard";
 
 
 export default function Home() {
@@ -20,22 +21,27 @@ export default function Home() {
     }
     return (
         <Container>
-            <Modal
+            {/* <Modal
                 closeModal={() => setVisible(false)}
                 visible={visible}
                 title="Titilo do modal"
                 text="Texto do modal"
             />
             <Toast />
-            <TextTheme>Home</TextTheme>
+            
             <ButtonG onPress={showToast}>
                 <ButtonText>Toast</ButtonText>
             </ButtonG>
             <ButtonG onPress={() => setVisible(true)}>
                 <ButtonText>Modal</ButtonText>
-            </ButtonG>
+            </ButtonG> */}
 
 
+            <TextTitleHome><TextTheme>Home</TextTheme></TextTitleHome>
+            
+            <TextSubTitle>
+            <Text>Categorias</Text>
+            </TextSubTitle>
             <FlatList
                 horizontal
                 data={dataCards}
@@ -45,6 +51,19 @@ export default function Home() {
                     </View>
                 }
             />
+            <FlatList
+                 data={dataInitialCars}
+                renderItem={({ item }) =>
+                    <View>
+                        {item.name}
+                    </View>
+                }
+            />
+
+
+
+
+            
 
         </Container>
     )

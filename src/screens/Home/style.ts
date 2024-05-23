@@ -1,8 +1,14 @@
 import styled from "styled-components/native";
-import { theme } from "../../components";
 
 
 export const Container = styled.View`
+    margin-top: 12px;
+    left: 8px;
+
+`
+export const TextTitleHome = styled.View`
     align-items: center;
-    justify-content: center;
+`
+
+export const TextSubTitle = styled.View`
 `
