@@ -14,26 +14,5 @@ export const dataCards = [
     {
         name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
     },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
-    {
-        name: <Cards url="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg"/>
-    },
 
 ]

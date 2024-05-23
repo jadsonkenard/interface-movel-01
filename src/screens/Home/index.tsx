@@ -52,10 +52,11 @@ export default function Home() {
                 }
             />
             <FlatList
-                 data={dataInitialCars}
+                style={{ paddingBottom: 50 }}
+                data={dataInitialCars}
                 renderItem={({ item }) =>
                     <View>
-                        {item.name}
+                        {item.card}
                     </View>
                 }
             />

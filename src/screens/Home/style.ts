@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 
 
 export const Container = styled.View`
+    flex: 1px;
     margin-top: 12px;
     left: 8px;
 

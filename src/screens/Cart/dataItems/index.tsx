@@ -104,7 +104,7 @@ export const data = [
     },
     {
         id: 20,
-        product: <ListItems amount={0} nameProd="Caixa de som" infoProd="Caixa de som smart light"/>,
+        product: <ListItems amount={0} nameProd="ULTIMO ITEM" infoProd="Caixa de som smart light"/>,
         imgProduct: <ImageItem url="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-www_114360-2073.jpg?w=740&t=st=1716243241~exp=1716243841~hmac=a0dc94b0822939a02f19657dc0cd9e0d8b171ea7eadc965f68af3612426febbe"/>
     },
 ]
