@@ -3,7 +3,7 @@ import { TextHeader } from "../themes/textTheme";
 
 
 interface TypesHeader {
-    title: string
+    title: string;
 }
 
 export default function Header({ title }: TypesHeader) {
@@ -14,4 +14,5 @@ export default function Header({ title }: TypesHeader) {
         </Container>
     )
 }
+
 
