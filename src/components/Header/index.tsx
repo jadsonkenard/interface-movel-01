@@ -1,18 +1,14 @@
-import { Container } from "./style";
-import { TextHeader } from "../themes/textTheme";
-
+import {Container} from './style';
+import {TextHeader} from '../themes/textTheme';
 
 interface TypesHeader {
-    title: string;
+  title: string;
 }
 
-export default function Header({ title }: TypesHeader) {
-
-    return (
-        <Container>
-            <TextHeader>{title}</TextHeader>
-        </Container>
-    )
+export default function Header({title}: TypesHeader) {
+  return (
+    <Container>
+      <TextHeader>{title}</TextHeader>
+    </Container>
+  );
 }
-
-
